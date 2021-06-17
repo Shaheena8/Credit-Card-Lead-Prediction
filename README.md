@@ -5,9 +5,11 @@ First step is to identify a clear objective of what you want to do with data: a 
 Imagine a black box with inputs as features and output as target variable. Then observe each variable there type where it is ordinal, nominal or integer.
  Step 2: Explore and Clean the Data (Exploratory data analysis):
 Encoding categorical variable:
-1.	In this dataset most of them are categorical variable of type nominal hence encoding of all the categorical features has to be encoded.
-2.	Among them Region_Code and Channel_Code are encoded by checking there             probability of occurrences. Only 7 high probability (P > 0. 3) Region_Codes are considered   for analysis. Channel code also encoded in the same manner (only 3 levels we considered). 
-3.	Encoded all other categorical variable with 2 levels, whereas all the levels in               Occupation feature is considered for analysis as they have direct effect on target variable.
+1.	In this dataset most of them are categorical variable of type nominal hence encoding of all the categorical features is avoided.
+2.	Among them Region_Code and Channel_Code are encoded by checking there probability of occurrences.
+   Only 7 high probability (P > 0. 3) Region_Codes are considered   for analysis. Channel code also encoded in the same manner (only 3 levels we considered). 
+4.	Encoded all other categorical variable with 2 levels, whereas all the levels in              
+   Occupation feature is considered for analysis as they have direct effect on target variable.
 Check for unbalanced data in the features:
 Unbalanced data can be discovered by calculating the total unique values in each        categorical variable.
 Checking for Null values:
